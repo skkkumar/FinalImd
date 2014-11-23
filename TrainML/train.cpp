@@ -146,6 +146,7 @@ public:
 
 class MyModule:public RFModule
 {
+   int lock;
        ML1 mlu, mlv, mlsiguu, mlsigvv ,mlsiguv;
 public:
     double getPeriod()
@@ -155,7 +156,7 @@ public:
 
     bool updateModule()
     {
-
+	      if (lock){
         mlu.trainData("flowstatistics_train_mu");
 
 	mlv.trainData("flowstatistics_train_mv");
@@ -165,6 +166,8 @@ public:
 	mlsigvv.trainData("flowstatistics_train_sigvv");
 
        mlsiguv.trainData("flowstatistics_train_siguv");
+      }
+      lock = 0;
         return true;
     }
 
@@ -183,6 +186,7 @@ public:
 
    virtual bool configure(ResourceFinder &rf)
     {
+      lock = 1;
 	return true;
   }
   
