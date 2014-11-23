@@ -90,7 +90,7 @@
   </connection>
 
   <connection>
-      <from>/tracker/imageR:o</from>
+      <from>/collect/image1:o</from>
       <to>/objectViewerRight</to>
       <protocol>udp</protocol>
   </connection>

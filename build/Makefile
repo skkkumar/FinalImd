@@ -181,6 +181,32 @@ train_linear/fast:
 	$(MAKE) -f TrainML1/CMakeFiles/train_linear.dir/build.make TrainML1/CMakeFiles/train_linear.dir/build
 .PHONY : train_linear/fast
 
+#=============================================================================
+# Target rules for targets named train_rbf_svr
+
+# Build rule for target.
+train_rbf_svr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 train_rbf_svr
+.PHONY : train_rbf_svr
+
+# fast build rule for target.
+train_rbf_svr/fast:
+	$(MAKE) -f TrainML2/CMakeFiles/train_rbf_svr.dir/build.make TrainML2/CMakeFiles/train_rbf_svr.dir/build
+.PHONY : train_rbf_svr/fast
+
+#=============================================================================
+# Target rules for targets named predict_linear
+
+# Build rule for target.
+predict_linear: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 predict_linear
+.PHONY : predict_linear
+
+# fast build rule for target.
+predict_linear/fast:
+	$(MAKE) -f Predict_linear/CMakeFiles/predict_linear.dir/build.make Predict_linear/CMakeFiles/predict_linear.dir/build
+.PHONY : predict_linear/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -196,6 +222,8 @@ help:
 	@echo "... collector"
 	@echo "... train_rbf"
 	@echo "... train_linear"
+	@echo "... train_rbf_svr"
+	@echo "... predict_linear"
 .PHONY : help
 
 

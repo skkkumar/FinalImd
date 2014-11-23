@@ -345,6 +345,12 @@ optimization_INCLUDE_DIRS:STRING=/home/sriram/Documents/icub-main-1.1.15/src/lib
 //include dir for target perceptiveModels
 perceptiveModels_INCLUDE_DIRS:STRING=/home/sriram/Documents/icub-main-1.1.15/src/libraries/perceptiveModels/include;/home/sriram/Documents/icub-main-1.1.15/src/libraries/ctrlLib/include;/home/sriram/Documents/icub-main-1.1.15/src/libraries/learningMachine/include;/usr/include
 
+//Value Computed by CMake
+predict_linear_BINARY_DIR:STATIC=/home/sriram/projects/FinalIMD/build/Predict_linear
+
+//Value Computed by CMake
+predict_linear_SOURCE_DIR:STATIC=/home/sriram/projects/FinalIMD/Predict_linear
+
 //include dir for target sharksWithLasers
 sharksWithLasers_INCLUDE_DIRS:STRING=/home/sriram/Documents/icub-main-1.1.15/src/examples/sharksWithLasers/include
 
@@ -368,6 +374,12 @@ train_rbf_BINARY_DIR:STATIC=/home/sriram/projects/FinalIMD/build/TrainML
 
 //Value Computed by CMake
 train_rbf_SOURCE_DIR:STATIC=/home/sriram/projects/FinalIMD/TrainML
+
+//Value Computed by CMake
+train_rbf_svr_BINARY_DIR:STATIC=/home/sriram/projects/FinalIMD/build/TrainML2
+
+//Value Computed by CMake
+train_rbf_svr_SOURCE_DIR:STATIC=/home/sriram/projects/FinalIMD/TrainML2
 
 
 ########################
@@ -494,7 +506,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

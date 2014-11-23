@@ -37,6 +37,8 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/sriram/projects/FinalIMD/build/getData/cmake_install.cmake")
   INCLUDE("/home/sriram/projects/FinalIMD/build/TrainML/cmake_install.cmake")
   INCLUDE("/home/sriram/projects/FinalIMD/build/TrainML1/cmake_install.cmake")
+  INCLUDE("/home/sriram/projects/FinalIMD/build/TrainML2/cmake_install.cmake")
+  INCLUDE("/home/sriram/projects/FinalIMD/build/Predict_linear/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
