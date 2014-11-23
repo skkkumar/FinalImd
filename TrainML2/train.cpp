@@ -179,6 +179,7 @@ public:
 
         //do_cross_validation();
         // first do grid search do find optimal parameters 
+        cout<<"starting parameter selection"<<endl<<flush;
         paramSelection();  
 
         
@@ -296,13 +297,15 @@ public:
 	    for(i=0;i<prob.l;i++)
 	    {
 		    inst_max_index = -1; // strtol gives 0 if wrong format, and precomputed kernel has <index> start from 0
+		    cout<<"problem here 1"<<endl<<flush;
 		    readline(fp);
-          
+          cout<<"problem here 2"<<endl<<flush;
             //store address of x_space into prob.x
 		    prob.x[i] = &x_space[j];
             //read one line
+		    cout<<"problem here 3"<<endl<<flush;
 		    label = strtok(line,"\n"); 
-//             printf("label is %s \n " , label);
+            printf("label is %s \n " , label);
 		    if(label == NULL){ // if empty line
                 cout<<"exit"<<endl<<flush;
 			    break;
@@ -314,11 +317,11 @@ public:
                //if this is the first input then use label
                 if(k == 0){
 		             x_space[j].value = atof(strtok(label,",")); // prob.y[i] = strtod(label,&endptr);
-//                     cout<<"x_space["<<j<<"].value is " << x_space[j].value<<endl<<flush;
+                    cout<<"x_space["<<j<<"].value is " << x_space[j].value<<endl<<flush;
                 }else{
                 //if this is not the first input then use label
                     x_space[j].value = atof(strtok(NULL,",")); // prob.y[i] = strtod(label,&endptr);
-//                     cout<<"x_space["<<j<<"].value is " << x_space[j].value<<endl<<flush;
+                    cout<<"x_space["<<j<<"].value is " << x_space[j].value<<endl<<flush;
                 }
 //                 cout<<"-------------1----------------"<<endl<<flush;
                 j++;
@@ -337,7 +340,7 @@ public:
             }
 //             cout<<"-------------4----------------"<<endl<<flush;
             prob.y[i] = atof(strtok(NULL,",")); // prob.y[i] = strtod(label,&endptr);
-//             cout<<"prob y["<<i<<"] is  " << prob.y[i]<<endl<<flush; 
+            cout<<"prob y["<<i<<"] is  " << prob.y[i]<<endl<<flush; 
             
              //to indicate end of the row in prob.x
              x_space[j].index = -1;

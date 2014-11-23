@@ -378,7 +378,10 @@ public:
 // 	cout << "total_no_of_velocityArray : " << total_no_of_velocityArray << endl << flush; 
 	for (int n = 0; n < total_no_of_velocityArray; n ++){
 // 	  cout<<velocityArray[n]<<" ";
-        file<<velocityArray[n]<<" ";
+        file<<velocityArray[n];
+	if (n != total_no_of_velocityArray-1){
+	file<<",";
+	}
 	}
 // 	file<<mu<<",";
 // 	file<<mv<<",";
