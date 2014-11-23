@@ -115,7 +115,7 @@ public:
 	    string model_file_name1 = flowstatistics_train_name+".csv";
         const char *model_file_name = model_file_name1.c_str();
         //file to read the data from
-	    char input_file_name[1024] = "velocityArray.csv";
+	    char input_file_name[1024] = "dataFile.csv";
         //char input_file_name2[1024] = "data/flowstatistics_train_mu.csv";
 	    const char *error_msg;
 
