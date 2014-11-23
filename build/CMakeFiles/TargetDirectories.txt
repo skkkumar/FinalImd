@@ -1,0 +1,2 @@
+/home/sriram/projects/FinalIMD/build/getData/CMakeFiles/collector.dir
+/home/sriram/projects/FinalIMD/build/TrainML/CMakeFiles/train.dir
