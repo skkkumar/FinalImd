@@ -143,25 +143,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-TrainML/CMakeFiles/train.dir/rule:
-	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML/CMakeFiles/train.dir/rule
-.PHONY : TrainML/CMakeFiles/train.dir/rule
+TrainML/CMakeFiles/train_rbf.dir/rule:
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML/CMakeFiles/train_rbf.dir/rule
+.PHONY : TrainML/CMakeFiles/train_rbf.dir/rule
 
 # Convenience name for target.
-train: TrainML/CMakeFiles/train.dir/rule
-.PHONY : train
+train_rbf: TrainML/CMakeFiles/train_rbf.dir/rule
+.PHONY : train_rbf
 
 # fast build rule for target.
-train/fast:
-	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train.dir/build.make TrainML/CMakeFiles/train.dir/build
-.PHONY : train/fast
+train_rbf/fast:
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train_rbf.dir/build.make TrainML/CMakeFiles/train_rbf.dir/build
+.PHONY : train_rbf/fast
 
 train.o: train.cpp.o
 .PHONY : train.o
 
 # target to build an object file
 train.cpp.o:
-	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train.dir/build.make TrainML/CMakeFiles/train.dir/train.cpp.o
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train_rbf.dir/build.make TrainML/CMakeFiles/train_rbf.dir/train.cpp.o
 .PHONY : train.cpp.o
 
 train.i: train.cpp.i
@@ -169,7 +169,7 @@ train.i: train.cpp.i
 
 # target to preprocess a source file
 train.cpp.i:
-	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train.dir/build.make TrainML/CMakeFiles/train.dir/train.cpp.i
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train_rbf.dir/build.make TrainML/CMakeFiles/train_rbf.dir/train.cpp.i
 .PHONY : train.cpp.i
 
 train.s: train.cpp.s
@@ -177,7 +177,7 @@ train.s: train.cpp.s
 
 # target to generate assembly for a file
 train.cpp.s:
-	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train.dir/build.make TrainML/CMakeFiles/train.dir/train.cpp.s
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML/CMakeFiles/train_rbf.dir/build.make TrainML/CMakeFiles/train_rbf.dir/train.cpp.s
 .PHONY : train.cpp.s
 
 # Help Target
@@ -192,7 +192,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... train"
+	@echo "... train_rbf"
 	@echo "... train.o"
 	@echo "... train.i"
 	@echo "... train.s"

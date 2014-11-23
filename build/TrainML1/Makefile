@@ -113,14 +113,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sriram/projects/FinalIMD/build/CMakeFiles /home/sriram/projects/FinalIMD/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/sriram/projects/FinalIMD/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sriram/projects/FinalIMD/build/CMakeFiles /home/sriram/projects/FinalIMD/build/TrainML1/CMakeFiles/progress.marks
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML1/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sriram/projects/FinalIMD/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML1/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,57 +129,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sriram/projects/FinalIMD/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named collector
+# Convenience name for target.
+TrainML1/CMakeFiles/train_linear.dir/rule:
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f CMakeFiles/Makefile2 TrainML1/CMakeFiles/train_linear.dir/rule
+.PHONY : TrainML1/CMakeFiles/train_linear.dir/rule
 
-# Build rule for target.
-collector: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collector
-.PHONY : collector
-
-# fast build rule for target.
-collector/fast:
-	$(MAKE) -f getData/CMakeFiles/collector.dir/build.make getData/CMakeFiles/collector.dir/build
-.PHONY : collector/fast
-
-#=============================================================================
-# Target rules for targets named train_rbf
-
-# Build rule for target.
-train_rbf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 train_rbf
-.PHONY : train_rbf
-
-# fast build rule for target.
-train_rbf/fast:
-	$(MAKE) -f TrainML/CMakeFiles/train_rbf.dir/build.make TrainML/CMakeFiles/train_rbf.dir/build
-.PHONY : train_rbf/fast
-
-#=============================================================================
-# Target rules for targets named train_linear
-
-# Build rule for target.
-train_linear: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 train_linear
+# Convenience name for target.
+train_linear: TrainML1/CMakeFiles/train_linear.dir/rule
 .PHONY : train_linear
 
 # fast build rule for target.
 train_linear/fast:
-	$(MAKE) -f TrainML1/CMakeFiles/train_linear.dir/build.make TrainML1/CMakeFiles/train_linear.dir/build
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML1/CMakeFiles/train_linear.dir/build.make TrainML1/CMakeFiles/train_linear.dir/build
 .PHONY : train_linear/fast
+
+train.o: train.cpp.o
+.PHONY : train.o
+
+# target to build an object file
+train.cpp.o:
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML1/CMakeFiles/train_linear.dir/build.make TrainML1/CMakeFiles/train_linear.dir/train.cpp.o
+.PHONY : train.cpp.o
+
+train.i: train.cpp.i
+.PHONY : train.i
+
+# target to preprocess a source file
+train.cpp.i:
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML1/CMakeFiles/train_linear.dir/build.make TrainML1/CMakeFiles/train_linear.dir/train.cpp.i
+.PHONY : train.cpp.i
+
+train.s: train.cpp.s
+.PHONY : train.s
+
+# target to generate assembly for a file
+train.cpp.s:
+	cd /home/sriram/projects/FinalIMD/build && $(MAKE) -f TrainML1/CMakeFiles/train_linear.dir/build.make TrainML1/CMakeFiles/train_linear.dir/train.cpp.s
+.PHONY : train.cpp.s
 
 # Help Target
 help:
@@ -193,9 +192,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... collector"
-	@echo "... train_rbf"
 	@echo "... train_linear"
+	@echo "... train.o"
+	@echo "... train.i"
+	@echo "... train.s"
 .PHONY : help
 
 
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sriram/projects/FinalIMD/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

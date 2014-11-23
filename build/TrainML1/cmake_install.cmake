@@ -1,4 +1,4 @@
-# Install script for directory: /home/sriram/projects/FinalIMD/TrainML
+# Install script for directory: /home/sriram/projects/FinalIMD/TrainML1
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,21 +33,21 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear")
     FILE(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear"
          RPATH "/usr/local/lib:/home/sriram/Documents/yarp-2.3.63/build/lib:/home/sriram/Documents/Ipopt-3.11.9/build/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/sriram/projects/FinalIMD/build/bin/train_rbf")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/sriram/projects/FinalIMD/build/bin/train_linear")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear")
     FILE(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf"
-         OLD_RPATH "/home/sriram/Documents/yarp-2.3.63/build/lib:/usr/local/lib:/home/sriram/Documents/Ipopt-3.11.9/build/lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear"
+         OLD_RPATH "/home/sriram/Documents/yarp-2.3.63/build/lib:/home/sriram/Documents/Ipopt-3.11.9/build/lib:::::::::::::::"
          NEW_RPATH "/usr/local/lib:/home/sriram/Documents/yarp-2.3.63/build/lib:/home/sriram/Documents/Ipopt-3.11.9/build/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_rbf")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/train_linear")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

@@ -36,6 +36,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/sriram/projects/FinalIMD/build/getData/cmake_install.cmake")
   INCLUDE("/home/sriram/projects/FinalIMD/build/TrainML/cmake_install.cmake")
+  INCLUDE("/home/sriram/projects/FinalIMD/build/TrainML1/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
